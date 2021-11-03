@@ -3,9 +3,22 @@ int maxValue = new Random().Next(10, 90);
 
 Console.WriteLine(minValue);
 Console.WriteLine(maxValue);
-//int[] arrayA = {-50, -40, -30, -10, 5, 20, 23, 19, 20, 60};
 int[] arrayA = new int[10];
 int[] arrayB = new int[10];
+
+void PrintArray(int[] col)
+{
+    int count = col.Length;
+    int position = 0;
+    while (position < count)
+    {
+            if(col[position]!=0)
+        {
+            Console.Write(col[position] +" ");
+        }
+            position++;
+    }  
+}
 
 
 for(int j=0; j<10; ++j)   // Заполнение массива случайными числами
@@ -35,20 +48,6 @@ int[] createArrayB(int[] arrayB) //Создание массива B на осн
         index++;
     }
     return arrayB;
-}
-
-void PrintArray(int[] col)
-{
-    int count = col.Length;
-    int position = 0;
-    while (position < count)
-    {
-            if(col[position]!=0)
-        {
-            Console.Write(col[position] +" ");
-        }
-            position++;
-    }  
 }
 
 arrayB = createArrayB(arrayB);
