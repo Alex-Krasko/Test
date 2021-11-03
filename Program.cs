@@ -36,7 +36,7 @@ int[] createArrayB(int[] arrayB) //Создание массива B на осн
     int len = (arrayA.Length)-1;
     int index = 0;
     int index2 = 0;
-    int currentElement = -90;
+    int currentElement = minValue;
     while (index <= len)
     {
         if(arrayA[index] > currentElement)
