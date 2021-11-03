@@ -1,8 +1,8 @@
 int minValue = new Random().Next(-90, -10);
 int maxValue = new Random().Next(10, 90);
 
-Console.WriteLine(minValue);
-Console.WriteLine(maxValue);
+Console.WriteLine("minValue: "+minValue);
+Console.WriteLine("maxValue: "+maxValue);
 int[] arrayA = new int[10];
 int[] arrayB = new int[10];
 
@@ -27,7 +27,7 @@ for(int j=0; j<10; ++j)   // Заполнение массива случайн�
     rnd=new Random();
     arrayA[j] = new Random().Next(minValue,maxValue);
 } 
-
+Console.Write("ArrayA: ");
 PrintArray(arrayA);
 Console.WriteLine();
 
@@ -51,4 +51,5 @@ int[] createArrayB(int[] arrayB) //Создание массива B на осн
 }
 
 arrayB = createArrayB(arrayB);
+Console.Write("ArrayB: ");
 PrintArray(arrayB);
